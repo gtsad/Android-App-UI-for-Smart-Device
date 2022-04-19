@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,6 +8,7 @@
     android:layout_gravity="center"
     android:background="@drawable/grad"
     tools:context=".MainActivity">
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/fragment_guideline_1"
@@ -27,14 +29,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_percent="0.54" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/fragment_guideline_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.93" />
+        app:layout_constraintGuide_percent="0.8" />
 
 
     <ImageView
@@ -67,7 +69,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/card"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         app:cardBackgroundColor="@color/white"
@@ -78,14 +80,238 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fragment_guideline_3"
         >
-        <androidx.viewpager.widget.ViewPager
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-        <fragment
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:name="com.example.uiproject.BlankFragment"/>
+            android:layout_height="match_parent">
+
+            <!--
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:filterTouchesWhenObscured="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ellipse_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.295" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginEnd="12dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ellipse_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.547" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="12dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ellipse_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.547" />
+    -->
+
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="148dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:text="Temperature"
+                android:textColor="#393838"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+<!--
+
+            <TextView
+                android:id="@+id/temppick"
+                android:layout_width="140dp"
+                android:layout_height="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:text="fdsfs"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/rectangle"
+                app:layout_constraintTop_toBottomOf="@+id/temp"/>
+-->
+
+
+            <LinearLayout
+                android:id="@+id/lay"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/rectangle"
+                app:layout_constraintTop_toBottomOf="@+id/temp">
+
+                <TextView
+                    android:id="@+id/temppick"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="fdsfs"
+                    android:gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="6"
+                    android:textSize="22dp"
+                   />
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/triangle"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/program"
+                android:layout_width="148dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:text="Program"
+                android:textColor="#393838"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lay" />
+
+            <NumberPicker
+                android:id="@+id/progpick"
+                android:layout_width="140dp"
+                android:layout_height="28dp"
+                android:background="@drawable/rectangle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/program" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="148dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:text="Timer"
+                android:textColor="#393838"
+              android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/progpick" />
+
+
+            <TextView
+                android:id="@+id/start"
+                android:layout_width="120dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="50dp"
+                android:gravity="center"
+                android:text="start"
+                android:textColor="#393838"
+                app:layout_constraintEnd_toStartOf="@id/end"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/time" />
+
+            <TextView
+                android:id="@+id/end"
+                android:layout_width="120dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="50dp"
+                android:gravity="center"
+                android:text="end"
+                android:textColor="#393838"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@id/start"
+                app:layout_constraintTop_toBottomOf="@+id/time" /><![CDATA[
+
+
+            >
+
+
+
+            ]]>
+
+            <NumberPicker
+                android:id="@+id/timepickstart"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/start"
+                app:layout_constraintStart_toStartOf="@+id/start"
+                app:layout_constraintTop_toBottomOf="@+id/start"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <NumberPicker
+                android:id="@+id/timepickend"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/end"
+                app:layout_constraintStart_toStartOf="@+id/end"
+                app:layout_constraintTop_toBottomOf="@+id/start" />
+            >
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.uiproject.BlankFragment"/>-->
     </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/button_on"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card"
+        android:layout_marginTop="20dp"/>
 
     <!--<ImageView
         android:id="@+id/imageView8"
