@@ -14,6 +14,8 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">25dp</item>
         <item name="color">@color/white</item>
+        <item name="backgroundColor">@color/white</item>
     </style>
+
 
 </resources>

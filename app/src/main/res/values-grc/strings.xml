@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BOSCH myOven</string>
+    <string name="picktemp">Επίλεξε Θερμοκρασία</string>
+    <string name="pickprog">Επίλεξε Πρόγραμμα</string>
+    <string name="temp">Θερμοκρασία</string>
+    <string name="prog">Πρόγραμμα</string>
+    <string name="start">αρχή</string>
+    <string name="end">τέλος</string>
+    <string name="Bottomelementheat">Κάτω αντίσταση</string>
+    <string name="Fanwithlow">Κάτω Αντίσταση με αέρα</string>
+    <string name="Bottomelementheatingwithgrill">Κάτω Αντίσταση και γκρίλ</string>
+    <string name="Fanwithgrill">Γκρίλ με αέρα</string>
+    <string name="Grill">Γκρίλ</string>
+    <string name="grillandlower">Γκρίλ και κάτω αντίσταση</string>
+    <string name="Upperelementheat">Πάνω αντίσταση</string>
+    <string name="upandlowel">Πάνω-Κάτω αντιστάσεις</string>
+    <string name="now">τώρα</string>
+    <string name="set">θέσε</string>
+    <string name="ovnstr">Ώρα έναρξης: </string>
+
+</resources>

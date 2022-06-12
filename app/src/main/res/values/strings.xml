@@ -1,5 +1,26 @@
 <resources>
-    <string name="app_name">UIProject</string>
+    <string name="app_name">BOSCH myOven</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="picktemp">Pick a temperature</string>
+    <string name="pickprog">Pick a program</string>
+    <string name="temp">Temperature</string>
+    <string name="prog">Program</string>
+    <string name="start">start</string>
+    <string name="end">end</string>
+    <string name="Bottomelementheat">Lower element heat</string>
+    <string name="grillandlower">Grill and lower heat</string>
+    <string name="Upperelementheat">Upper element heat</string>
+    <string name="upandlowel">Upper and lower heating elements</string>
+    <string name="Bottomelementheatingwithgrill">Lower element heating with grill</string>
+    <string name="Fanwithgrill">Fan with grill</string>
+    <string name="Fanwithlow">Fan with lower heat</string>
+    <string name="now">now</string>
+    <string name="set">set</string>
+<string name="ovnstr">Oven start time:</string>
+    <string name="Grill">Grill</string>
+
+
+
+    "Fan oven", "Conventional heating", "Bottom element heat", "Bottom element heating with grill",
+    "Fan with grill", " Grill"};
 </resources>

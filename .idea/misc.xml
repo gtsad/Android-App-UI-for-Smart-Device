@@ -3,16 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1665" />
         <entry key="app/src/main/res/drawable/dialogbg.xml" value="0.199" />
         <entry key="app/src/main/res/drawable/dialogstyle.xml" value="0.199" />
-        <entry key="app/src/main/res/drawable/grad.xml" value="0.3305" />
+        <entry key="app/src/main/res/drawable/grad.xml" value="0.16" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.3305" />
         <entry key="app/src/main/res/drawable/image_shadow.xml" value="0.3305" />
         <entry key="app/src/main/res/drawable/rectangle.xml" value="0.3305" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2832618025751073" />
+        <entry key="app/src/main/res/drawable/toastbg.xml" value="0.1765" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2728921124206709" />
         <entry key="app/src/main/res/layout/dialogstyle.xml" value="0.1569046601111586" />
         <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.2923076923076923" />
-        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_first2.xml" value="0.14920906370243694" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.14920906370243694" />
+        <entry key="app/src/main/res/layout/help_dialog.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/presets.xml" value="0.15604959384352288" />
+        <entry key="app/src/main/res/layout/rv_row.xml" value="0.1483539974348012" />
+        <entry key="app/src/main/res/layout/settings_layout.xml" value="0.15604959384352288" />
+        <entry key="app/src/main/res/layout/time_picker_dialog.xml" value="0.29157759726378796" />
+        <entry key="app/src/main/res/layout/toast.xml" value="0.21228583368157125" />
         <entry key="app/src/main/res/layout/view_number_dialog.xml" value="0.29243266353142366" />
       </map>
     </option>
